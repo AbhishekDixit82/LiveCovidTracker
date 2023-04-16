@@ -1,0 +1,140 @@
+section {
+    position: relative;
+    padding: 50px;
+    background: url('covid19.jpg') center/cover no-repeat;
+  }
+  
+  section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change opacity here */
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff073a;
+    margin-bottom: 45px;
+    text-align: center;
+}
+  
+h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5; /* Change opacity here */
+  }
+  span{
+    font-size: 1rem;
+    color:#ff073a;
+  }
+
+  .card {
+    background-color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card_name {
+    font-size: 2rem;
+    color: #24078c;
+}
+
+  
+
+
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for screens smaller than 768px */
+    section {
+    padding: 30px;
+    }
+    
+    h1 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    }
+    
+    h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    }
+    
+    li {
+    flex-basis: calc(50% - 20px);
+    }
+    
+    img {
+    opacity: 0.7;
+    }
+    
+    .card {
+    font-size: 1.2rem;
+    }
+    
+    .card_name {
+    font-size: 1.5rem;
+    }
+    }
+    
+    @media only screen and (max-width: 480px) {
+    /* Adjust styles for screens smaller than 480px */
+    section {
+    padding: 20px;
+    }
+    
+    h1 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    }
+    
+    h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    }
+    
+    li {
+    flex-basis: 100%;
+    }
+    
+    img {
+    opacity: 0.8;
+    }
+    
+    .card {
+    font-size: 1rem;
+    }
+    
+    .card_name {
+    font-size: 1.2rem;
+    }
+    }
+  
